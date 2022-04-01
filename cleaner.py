@@ -1,6 +1,6 @@
 improt pandas as pd
 
-df = pd.read_csv("/Users/tquintan/Desktop/piscine_ds/day00/ex03/hh_sorted.csv")
+df = pd.read_csv("../ex02/hh_sorted.csv")
 
 def find_grade(a):
     b = ""
@@ -20,4 +20,5 @@ def find_grade(a):
         b = "-"
     return (b)
 
-jobs = df.name.apply(lambda x: find_grade(x))
+df.name = df.name.apply(lambda x: find_grade(x))
+df.to_csv("hh_positions.csv")
