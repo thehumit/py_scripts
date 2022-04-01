@@ -1,4 +1,4 @@
-improt pandas as pd
+import pandas as pd
 
 df = pd.read_csv("../ex02/hh_sorted.csv")
 
