@@ -1,7 +1,7 @@
 import pandas as pd
 import csv
 
-df = pd.read_csv("../ex02/hh_sorted.csv")
+df = pd.read_csv("../ex03/hh_positions.csv")
 
 def counter(df):
     titles = ["Junior", "Middle", "Senior"]
