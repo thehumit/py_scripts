@@ -1,7 +1,7 @@
 import pandas as pd
 import csv
 
-df = pd.read_csv("/Users/tquintan/Desktop/piscine_ds/day00/ex03/hh_positions.csv")
+df = pd.read_csv("../ex03/hh_positions.csv")
 dates = pd.to_datetime(df.created_at)
 unique = dates.map(lambda t: t.date()).unique()
 
