@@ -12,5 +12,5 @@ def counter(df):
     return(df_ret)
 
 tmp = counter(df)
-tmp.sort_index(by = ["count"], inplace=True
+tmp.sort_index(by = ["count"], ascending=False, inplace=True)
 tmp.to_csv("hh_positions.csv", index=False, quoting=csv.QUOTE_ALL)
