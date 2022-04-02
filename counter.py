@@ -13,4 +13,4 @@ def counter(df):
 
 tmp = counter(df)
 tmp.sort_values(by=["count"], ascending=False, inplace=True)
-tmp.to_csv("hh_positions.csv", index=False, quoting=csv.QUOTE_ALL)
+tmp.to_csv("hh_positions.csv", index=False, quoting=csv.QUOTE_NONNUMERIC)
