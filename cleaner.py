@@ -21,4 +21,4 @@ def find_grade(a):
     return (b)
 
 df.name = df.name.apply(lambda x: find_grade(x))
-df.to_csv("hh_positions.csv")
+df.to_csv("hh_positions.csv", index=False, quoting=csv.QUOTE_ALL)
